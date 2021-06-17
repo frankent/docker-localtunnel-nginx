@@ -22,6 +22,13 @@ openssl req -x509 -nodes -days 5000 -newkey rsa:2048 -keyout ./ssl/server.key -o
 ```
 Just follow the instructions, fill in the information as desired.
 
+### Firewall Config
+
+If you are ubuntu user, you need to disable firewall config first by running the command own here
+```shell
+sudo ufw disable
+```
+
 ### Startup
 
 Finally, you start the server by running `docker-compose up -d`
